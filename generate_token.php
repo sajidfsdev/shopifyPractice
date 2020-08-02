@@ -1,5 +1,7 @@
 <?php
-alert("reached at this branch");
+echo "Generate php";
+echo "JAVA";
+return header("location:/index.php");
 // Get our helper functions
 require_once("inc/functions.php");
 
