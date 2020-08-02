@@ -1,5 +1,5 @@
 <?php
-
+header("location:/index.php");
 // Get our helper functions
 require_once("inc/functions.php");
 
