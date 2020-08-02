@@ -1,7 +1,6 @@
 
 
 <?php
- include(dirname(__DIR__).'/constants.php');
  include(dirname(__DIR__).'/controller/animation.php');
  include(dirname(__DIR__).'/controller/addAnimation.php');
 
@@ -18,7 +17,7 @@
  if($_POST["animations"]=="none")
  {
     //  return header("location:https://animationbtn.herokuapp.com");
-    return header("location:".constants::$server);
+    return header("location:".dirname(__DIR__)."/");
 
  }
 
@@ -30,7 +29,7 @@
     if(insertAnimation($delay,$repeat,$animation,$price))
     {
         // return header("location:https://animationbtn.herokuapp.com/view/main.php");
-        return header("location:".constants::$server.'view/main.php');
+        return header("location:".dirname(__DIR__)."/view/main.php");
     }
     else
     {
