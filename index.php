@@ -1,3 +1,4 @@
 <?php
-    require(dirname(__DIR__)."/install.php");
+    
+    header('location:/index.php');
 ?>
