@@ -167,11 +167,16 @@
     {
         var config={
             headers:{
-                
-                token:'c989c2e6c3fe8b05df59a7b8af541d12'
+                'token':'c989c2e6c3fe8b05df59a7b8af541d12'
             }
         };
-        fetch("https://animationproject.myshopify.com/admin/api/2020-07/shopify_payments/balance.json",config)
+        fetch("https://animationproject.myshopify.com/admin/api/2020-07/shopify_payments/balance.json",{
+            method:'GET',
+            headers:{
+                'Content-Type':'application/json',
+                'Authorization':'c989c2e6c3fe8b05df59a7b8af541d12'
+            }
+        })
         .then(res=>{
             window.alert("res has came");
             console.log(res);
