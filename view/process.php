@@ -142,7 +142,7 @@
                         <input type="text" class="input__checkout" />
                     </div>
                     <div id="btnRow__checkout">
-                        <button  class="btn btn-md btn-success btn__checkout">
+                        <button onclick="executePayment()"  class="btn btn-md btn-success btn__checkout">
                             Complete the  Payment
                         </button>
                     </div>
@@ -160,3 +160,11 @@
 
  
 ?>
+
+
+<script>
+    function executePayment()
+    {
+        alert("Called");
+    }
+</script>
