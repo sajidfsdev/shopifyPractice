@@ -67,6 +67,31 @@
  
  else
  {
+
+    //starts...............
+
+
+// Set variables for our request
+$shop = "animationproject";
+$token = "c989c2e6c3fe8b05df59a7b8af541d12";
+$query = array(
+  "Content-type" => "application/json" // Tell Shopify that we're expecting a response in JSON format
+);
+
+// Webhook content, including the URL to POST to
+$capture_data = array(
+  'transaction' =>
+ array(
+   'kind' => 'capture'
+ )
+);
+
+// Run API call (POST) to capture the payment on the order
+$capture_response = shopify_call($token, $shop, "/admin/orders/" . $webhook_content['id'] . "/transactions.json", $capture_data, 'POST');
+echo $capture_response;
+
+
+    //ends..................
      ?>
         <!DOCTYPE html>
 <html lang="en">
@@ -117,7 +142,7 @@
                         <input type="text" class="input__checkout" />
                     </div>
                     <div id="btnRow__checkout">
-                        <button class="btn btn-md btn-success btn__checkout">
+                        <button  class="btn btn-md btn-success btn__checkout">
                             Complete the  Payment
                         </button>
                     </div>
