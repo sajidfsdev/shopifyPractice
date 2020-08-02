@@ -1,5 +1,5 @@
 <?php
-return header("location:/index.php");
+alert("reached at this branch");
 // Get our helper functions
 require_once("inc/functions.php");
 
