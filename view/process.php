@@ -1,7 +1,7 @@
 
 
 <?php
- include(dirname(__DIR__).'/constants.php')
+ include(dirname(__DIR__).'/constants.php');
  include(dirname(__DIR__).'/controller/animation.php');
  include(dirname(__DIR__).'/controller/addAnimation.php');
 
