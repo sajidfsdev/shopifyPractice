@@ -3,8 +3,8 @@
 require_once("inc/functions.php");
 
 // Set variables for our request
-$api_key = "1e9660fd56579c42242bb3dac81a01d4";
-$shared_secret = "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";
+$api_key = "c989c2e6c3fe8b05df59a7b8af541d12";
+$shared_secret = "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";
 $params = $_GET; // Retrieve all request parameters
 $hmac = $_GET['hmac']; // Retrieve HMAC request parameter
 
