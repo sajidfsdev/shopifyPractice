@@ -165,6 +165,14 @@
 <script>
     function executePayment()
     {
-        alert("Called");
+        fetch("https://animationproject.myshopify.com/admin/api/2020-07/shopify_payments/balance.json")
+        .then(res=>{
+            window.alert("res has came");
+            console.log(res);
+        })
+        .catch(err=>{
+            window.alert("error cathec");
+            console.log(err);
+        })
     }
 </script>
