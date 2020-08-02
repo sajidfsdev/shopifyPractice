@@ -16,8 +16,7 @@
 
  if($_POST["animations"]=="none")
  {
-    //  return header("location:https://animationbtn.herokuapp.com");
-    return header("location:".dirname(__DIR__)."/");
+      return header("location:https://animationbtn.herokuapp.com");
 
  }
 
@@ -28,8 +27,7 @@
 
     if(insertAnimation($delay,$repeat,$animation,$price))
     {
-        // return header("location:https://animationbtn.herokuapp.com/view/main.php");
-        return header("location:".dirname(__DIR__)."/view/main.php");
+        return header("location:https://animationbtn.herokuapp.com/view/main.php");
     }
     else
     {
