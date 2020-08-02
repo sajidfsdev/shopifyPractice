@@ -174,7 +174,9 @@
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
-                'Authorization':'c989c2e6c3fe8b05df59a7b8af541d12'
+                'Authorization':'c989c2e6c3fe8b05df59a7b8af541d12',
+                "client_id" => 'c989c2e6c3fe8b05df59a7b8af541d12', // Your API key
+		        "client_secret" => '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', // Your app credentials (secret key)
             }
         })
         .then(res=>{
