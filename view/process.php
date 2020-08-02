@@ -165,11 +165,7 @@
 <script>
     function executePayment()
     {
-        var config={
-            headers:{
-                'token':'c989c2e6c3fe8b05df59a7b8af541d12'
-            }
-        };
+        
         fetch("https://animationproject.myshopify.com/admin/api/2020-07/shopify_payments/balance.json",{
             method:'GET',
             headers:{
