@@ -1,5 +1,5 @@
 <?php
     class constants{
-        static $server="http://localhost/App/";
+        static $server="https://sopifyproject.herokuapp.com/";
     }
 ?>
