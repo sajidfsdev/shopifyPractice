@@ -144,7 +144,7 @@
                         <input type="text" class="input__checkout" />
                     </div>
                     <div id="btnRow__checkout">
-                        <button onclick="executepayment()"  class="btn btn-md btn-success btn__checkout">
+                        <button class="btn btn-md btn-success btn__checkout">
                             Complete the  Payment
                         </button>
                     </div>
@@ -162,28 +162,3 @@
 
  
 ?>
-
-
-<script>
-    function executepayment()
-    {
-        
-        fetch("https://animationproject.myshopify.com/admin/api/2020-07/shopify_payments/balance.json",{
-            method:'GET',
-            headers:{
-                'Content-Type':'application/json',
-                'Authorization':'c989c2e6c3fe8b05df59a7b8af541d12',
-                "client_id" => 'c989c2e6c3fe8b05df59a7b8af541d12', // Your API key
-		        "client_secret" => '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', // Your app credentials (secret key)
-            }
-        })
-        .then(res=>{
-            window.alert("res has came");
-            console.log(res);
-        })
-        .catch(err=>{
-            window.alert("error cathec");
-            console.log(err);
-        })
-    }
-</script>
